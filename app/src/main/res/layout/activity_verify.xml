@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue"
+
+    tools:context=".VerifyActivity">
+
+    <LinearLayout
+        android:id="@+id/verifing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/textCode"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/signin_verify"
+            android:hint="000000"
+            android:inputType="number"
+            android:letterSpacing="1"
+            android:maxLength="6"
+            android:padding="10dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias=".3" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnVerify"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:background="@drawable/siginin_next"
+            android:text="Verify"
+            android:layout_margin="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.4" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/loadmsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sending Your OTP"
+            android:textColor="@color/black"
+            android:textSize="20dp"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/ic_baseline_phonelink_setup_24" />
+
+</RelativeLayout>

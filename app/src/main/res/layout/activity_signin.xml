@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue"
+    android:padding="20dp"
+    tools:context=".signin">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".35">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/signin_helper"
+            android:gravity="center"
+            android:letterSpacing=".8"
+            android:layout_marginRight="2dp"
+            android:text="+94"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/textPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/sigin_phone"
+            android:hint="7XXXXXXXX"
+            android:inputType="phone"
+            android:letterSpacing="1" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnNext"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/siginin_next"
+        android:text="Next"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias=".1" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".9"
+        app:srcCompat="@drawable/flag" />
+
+    <!--    <Button-->
+    <!--        android:id="@+id/button"-->
+    <!--        android:layout_width="200dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:background="@drawable/siginin_next"-->
+    <!--        android:text="Next"-->
+    <!--        -->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

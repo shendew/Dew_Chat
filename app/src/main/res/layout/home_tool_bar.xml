@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:background="@color/dark_blue"
+    android:padding="5dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:paddingLeft="30dp"
+        android:textStyle="bold"
+        android:text="Dew Chat" />
+
+    <com.skydoves.elasticviews.ElasticImageView
+        android:id="@+id/more"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_baseline_more_vert_24"
+
+        android:layout_alignParentRight="true"
+        />
+
+    <com.skydoves.elasticviews.ElasticImageView
+        android:id="@+id/search"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:layout_toStartOf="@id/more"
+
+        android:src="@drawable/ic_baseline_search_24" />
+</RelativeLayout>

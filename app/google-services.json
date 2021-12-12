@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "93758462388",
+    "project_id": "chat-app-6e385",
+    "storage_bucket": "chat-app-6e385.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:93758462388:android:bc948c40a14bbf7677fae1",
+        "android_client_info": {
+          "package_name": "com.kingdews.dewchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "93758462388-6ancv4u7atj09d0uigm9t0o1qa9pi4kj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kingdews.dewchat",
+            "certificate_hash": "82bb572c3500cbb20f4404ccb403f1b8960bd9c2"
+          }
+        },
+        {
+          "client_id": "93758462388-d82c0aat638m6ittsfootsnhadqhjike.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7aLjVFtJzcmLn7TgAtRfOLvE6hlqeMcI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "93758462388-d82c0aat638m6ittsfootsnhadqhjike.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
